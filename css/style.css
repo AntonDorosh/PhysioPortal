@@ -97,7 +97,7 @@ body {
 .intro {
   position: relative;
   height: 87vh;
-  background-image: url(./img/intro-bg.jpg);
+  background-image: url(../img/intro-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -210,7 +210,13 @@ body {
   width: 40%;
 }
 
+.dropdown__btn-sidebar {
+  display: block;
+}
+
 .active {
   background-color: green;
   color: white;
 }
+
+
