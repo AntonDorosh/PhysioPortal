@@ -207,7 +207,7 @@ body {
   display: none;
   background-color: #5e5ee5;
   padding-left: 8px;
-  width: 40%;
+  width: 85%;
 }
 
 .dropdown__btn-sidebar {
@@ -219,4 +219,7 @@ body {
   color: white;
 }
 
-
+.main__content {
+  display: grid;
+  grid-template-columns: minmax(250px, 350px) auto;
+}
