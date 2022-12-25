@@ -99,11 +99,6 @@ body {
 .intro {
   position: relative;
   height: 87vh;
-  /* height: 87vh;
-  background-image: url(../img/intro-bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
 
 .intro__slider {
@@ -281,7 +276,7 @@ span.slider-dots__active {
   margin-left: -5px;
 }
 
-.active {
+.dropdowm__btn-active {
   background-color: #5e5ee5;
   color: white;
 }
@@ -292,7 +287,7 @@ span.slider-dots__active {
 
 .main__content {
   display: grid;
-  grid-template-columns: 320px auto;
+  grid-template-columns: 24% 76%;
 }
 
 .main-wrapper {
@@ -306,8 +301,48 @@ span.slider-dots__active {
   border-right: 1px solid #5e5ee5;
 }
 
-.text-content {
-  padding: 10px;
+.sidebar__nav {
+  position: sticky;
+  top: 60px;
+}
+
+/* CONTENT  */
+
+.subscribe__inner {
+  display: flex;
+  background-color: rgb(240, 240, 240);
+  padding: 25px;
+}
+
+.subscribe__email {
+  display: block;
+}
+
+.reviews,
+.blog,
+.forum {
+  background-color: white;
+  padding: 25px;
+}
+
+.blog__title-inner,
+.reviews__title-inner,
+.forum__title-inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.blog__title,
+.reviews__title,
+.forum__title {
+  font-size: 30px;
+}
+
+.blog__title-link,
+.reviews__title-link,
+.forum__title-link {
+  font-size: 20px;
 }
 
 .blog__list {
@@ -319,6 +354,7 @@ span.slider-dots__active {
 .footer__top {
   background-color: #5e5ee5;
   padding: 20px 0 0 0;
+  clear: both;
 }
 
 .footer__menu {

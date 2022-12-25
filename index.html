@@ -54,7 +54,6 @@
             <li><a class="header__bottom-link" href="#">Про мене</a></li>
             <li><a class="header__bottom-link" href="#">Контакти</a></li>
             <li><a class="header__bottom-link" href="#">Відгуки</a></li>
-            <li><a class="header__bottom-link" href="#">Сертифікати</a></li>
             <li><a class="header__bottom-link" href="#">Блог</a></li>
             <li><a class="header__bottom-link" href="#">Форум</a></li>
           </ul>
@@ -199,9 +198,9 @@
           </p>
           <p>Воспользуйтесь преимуществами услуги Вызов реабилитолога на дом!</p>
           <section class="blog">
-            <div>
-              <h2>Блог</h2>
-              <a href="#">Все статьи</a>
+            <div class="blog__title-inner">
+              <h2 class="blog__title">Блог</h2>
+              <a class="blog__title-link" href="#">Все статьи</a>
             </div>
             <div class="blog__inner">
               <ul class="blog__list">
@@ -234,29 +233,29 @@
                   <span>22 декабря 2022</span>
                 </li>
               </ul>
-              <div class="mailing">
-                <img src="./img/mail-envelopes-icon.png" alt="mailing" width="150" title="mailing">
-                <form action="#">
-                  <label for="email">Хотите узнавать о новых материалах первыми? Подпишитесь на нашу рассылку
-                  </label>
-                  <input type="email" name="email">
-                  <input type="submit" value="Подписаться">
-                </form>
-              </div>
             </div>
           </section>
-
-          <section class="reviews">
-            <div>
-              <h2>Отзывы</h2>
-              <a href="#">Все отзывы</a>
+          <section class="subscribe">
+            <div class="subscribe__inner">
+              <img src="./img/mail-envelopes-icon.png" alt="mailing" width="150" title="mailing">
+              <form class="subscribe__form" action="#">
+                <label for="email">Хотите узнавать о новых материалах первыми? Подпишитесь на нашу рассылку
+                </label>
+                <input class="subscribe__email" type="email" name="email">
+                <input class="subscribe__btn" type="submit" value="Подписаться">
+              </form>
             </div>
-            <ul>
-              <li>
+          </section>
+          <section class="reviews">
+            <div class="reviews__title-inner">
+              <h2 class="reviews__title">Отзывы</h2>
+              <a class="reviews__title-link" href="#">Все отзывы</a>
+            </div>
+            <ul class="reviews__list">
+              <li class="reviews__item">
                 <img src="./img/vlada_kravchuk.png" alt="Влада Кравчук">
                 <h3>Влада Кравчук</h3>
                 <q>Если у Вас реальная проблема, нужна поддержка грамотного реабилитолога, тогда Вам к Антону. Профессионал своего дела: владеет разнообразными методиками по поддержке и восстановлению организма. Реабилитолог, который чутко диагностирует, что конкретно, в каждой индивидуальной ситуации, нужно его подопечному. Обратившись к нему, вы будете шаг за шагом идти к реальному восстановлению, получите конкретные рекомендации, что требуется для поддержания достигнутых результатов.</q>
-                </p>
               </li>
               <li>
                 <img src="./img/nadezhda_korshikova.png" alt="Надежда Коршикова">
@@ -276,12 +275,12 @@
           </section>
           <p>Есть вопрос? <a href="#">Задать мне вопрос</a></p>
           <section class="forum">
-            <div>
-              <h2>Форум</h2>
-              <a href="#">Все темы</a>
+            <div class="forum__title-inner">
+              <h2 class="forum__title">Форум</h2>
+              <a class="forum__title-link" href="#">Все темы</a>
             </div>
-            <div class="topics">
-              <ul>
+            <div class="forum__topics">
+              <ul class="forum__topics-list">
                 <li><a href="#">Lorem ipsum dolor sit amet consectetur.</a></li>
                 <li><a href="#">Lorem ipsum dolor sit amet consectetur.</a></li>
                 <li><a href="#">Lorem ipsum dolor sit amet consectetur.</a></li>
