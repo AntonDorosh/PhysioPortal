@@ -191,12 +191,8 @@
             </ul>
           </nav>
         </aside>
-        <section class="text-content">
-          <p><a href="#">Зарегистрируйтесь</a> и станьте активным пользователем! Оставляйте комментарии, задавайте вопросы на <a href="#">форуме</a> и получайте на них ответы!
-          </p>
-          <p>получите <a href="#">онлайн консультацию</a> и программу реабилитации всего за 599 грн (анализ выписок, снимков мрт, кт, рентген(при наличии), рекомендации по реабилитации)
-          </p>
-          <p>Воспользуйтесь преимуществами услуги Вызов реабилитолога на дом!</p>
+
+        <div class="text-content">
           <section class="blog">
             <div class="blog__title-inner">
               <h2 class="blog__title">Блог</h2>
@@ -251,27 +247,38 @@
             </div>
             <ul class="reviews__list">
               <li class="reviews__item">
-                <img src="./img/vlada_kravchuk.png" alt="Влада Кравчук">
-                <h3 class="reviews__item-title">Влада Кравчук</h3>
+                <div class="reviews__item-img__container">
+                  <img src="./img/vlada_kravchuk.png" alt="Влада Кравчук" width="80">
+                  <h3 class="reviews__item-title">Влада Кравчук</h3>
+                </div>
                 <q class="reviews__item-quote">Если у Вас реальная проблема, нужна поддержка грамотного реабилитолога, тогда Вам к Антону. Профессионал своего дела: владеет разнообразными методиками по поддержке и восстановлению организма. Реабилитолог, который чутко диагностирует, что конкретно, в каждой индивидуальной ситуации, нужно его подопечному. Обратившись к нему, вы будете шаг за шагом идти к реальному восстановлению, получите конкретные рекомендации, что требуется для поддержания достигнутых результатов.</q>
               </li>
-              <li>
-                <img src="./img/nadezhda_korshikova.png" alt="Надежда Коршикова">
-                <h3>Надежда Коршикова</h3>
-                <q>Огромная благодарность за помощь и восстановление полноценного движения! И массаж, и мануальные техники, и физиотерапия дает волшебный эффект! Благодарю за индивидуальный подход, тонкое чувствование потребности каждого клиента и его особенностей (травм, возраста, операций, рекомендаций и т.д), комплексный подход к полноценному восстановлению активного функционирования и движения! Рекомендую на все 1000000% 😊</q>
+              <li class="reviews__item">
+                <div class="reviews__items-img__container reviews__items-img__container--right">
+                  <img class="reviews__item-img" src="./img/nadezhda_korshikova.png" alt="Надежда Коршикова" width="80">
+                  <h3 class="reviews__item-title">Надежда Коршикова</h3>
+                </div>
+                <q class="reviews__item-quote reviews__item-quote-right">Огромная благодарность за помощь и восстановление полноценного движения! И массаж, и мануальные техники, и физиотерапия дает волшебный эффект! Благодарю за индивидуальный подход, тонкое чувствование потребности каждого клиента и его особенностей (травм, возраста, операций, рекомендаций и т.д), комплексный подход к полноценному восстановлению активного функционирования и движения! Рекомендую на все 1000000%</q>
               </li>
-              <li>
-                <img src="./img/nikolay_rudenko.png" alt="Николай Руденко">
-                <h3>Николай Руденко</h3>
-                <q>Хочу виразити свою вдячність Антону Сергійовичу, за його допомогу та професіоналізм!
-                Маючи проблеми зі спиною та шиею, пов’язані з сидячим способом життя та роботою, звернувся до Антона Сергійовича.
+              <li class="reviews__item">
+                <div class="reviews__item-img__container">
+                  <img src="./img/nikolay_rudenko.png" alt="Николай Руденко" width="80">
+                  <h3 class="reviews__item-title">Николай Руденко</h3>
+                </div>
+                <q class="reviews__item-quote">Хочу виразити свою вдячність Антону Сергійовичу, за його допомогу та професіоналізм!
+                Маючи проблеми зі спиною та шиєю, пов’язані з сидячим способом життя та роботою, звернувся до Антона Сергійовича.
                 Вже після першого заняття відчув полегшення і вже за декілька занять абсолютно забув про больові відчуття та дискомфорт. Заняттями ми не обмежились, я отримав ряд детальних рекомендацій для підтримання свого здоров‘я вдома.
                 Побільше б таких грамотних спеціалістів!
-                Тепер вся сім‘я лікується тільки в нього!Рекомендую!!</q>
+                Тепер вся сім`я лікується тільки в нього! Рекомендую!!</q>
               </li>
             </ul>
           </section>
-          <p>Есть вопрос? <a href="#">Задать мне вопрос</a></p>
+          <section class="question">
+            <img src="./img/question-mark.png" alt="question-mark" title="Задати запитання на форумі">
+            <p class="question__text">
+              <!-- <i class="fa fa-fw fa-question-circle"></i> -->
+              Есть вопрос? Задать мне вопрос на форуме <a class="question__text-link" href="#">в соответсвующем разделе</a></p>
+          </section>
           <section class="forum">
             <div class="forum__title-inner">
               <h2 class="forum__title">Форум</h2>
@@ -288,100 +295,114 @@
               </ul>
             </div>
           </section>
-        </section>
+          <section class="registration">
+            <img src="./img/registration.png" alt="">
+            <p class="registration__text"><a class="registration__text-link" href="#">Зарегистрируйтесь</a> и станьте активным пользователем! Оставляйте комментарии, задавайте вопросы на <a class="registration__text-link" href="#">форуме</a> и получайте на них ответы!
+            </p>
+          </section>
+
+          <section class="request">
+            <p>Получить консультацию</p>
+            <p>Какие услуги вас интерисуют?</p>
+            <p>Запросите цены и или условия реабилитации</p>
+            <form action="">
+
+            </form>
+          </section>
+        </div>
       </div>
     </main>
-    <footer class="footer__top">
-      <div class="container footer__container">
-        <div class="footer__logo-section">
-          <div class="logo__inner">
-            <a class="logo" href="#" >
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" version="1.0" viewBox="0 0 512 512" fill="#ffffff"><path d="M361.7 1C343.4 5.7 330 22.9 330 41.8c0 14.7 6.4 26.7 18.6 35.2 11.3 7.9 27.9 9.2 40.5 3.3 32.9-15.4 33-61.2.2-76.5-5.3-2.5-8-3.1-15.1-3.4-4.8-.2-10.4.1-12.5.6zM176.7 29.1c-6.4 1.5-13.9 5.9-19.2 11.3-16 16.4-16.2 41.4-.5 58 20.3 21.5 54.6 16.3 67.7-10.2 3.7-7.4 3.8-7.9 3.8-18.1-.1-8.7-.5-11.7-2.4-16.4-2.6-6.6-11-16.3-17.4-20-8.8-5.2-21.8-7-32-4.6z"/><path d="M125 99c-1.9 1-17.7 13.7-35 28.2-33.9 28.5-35 29.7-35 38.8 0 4.5 16.6 75 19.1 81.3.7 1.5 2.9 4.3 5 6.1l3.9 3.3v123.6c0 93.7.3 124.2 1.2 126.2.7 1.5 2.4 3.3 3.9 4.1 4.5 2.3 7.8 1.7 11.5-2l3.4-3.4V255.8l2.5-2c2.9-2.2 5.9-7.7 7-12.5.5-2.4-1.4-11.6-7-34.8-4.2-17.3-7.5-32-7.3-32.5.2-.5 8.2-7.5 17.8-15.5l17.5-14.6.5 125.3.5 125.4 2.6 4.9c9.1 17.7 33.7 17.7 43.2 0 2.2-3.9 2.2-4.9 2.5-56.3l.3-52.2h9.9v96.7c0 53.3.3 99.2.7 102.1 1.8 15.3 16.4 25.2 31 21.1 6.1-1.7 14.6-9.8 16.2-15.5.8-2.7 1.1-56.9 1.1-181.2V136.9l2.3.6c5.4 1.6 5.3 1.2 6 44.2.4 21.9.7 57 .7 77.9v38.2l2.8 5.3c6.6 12.7 23.8 14.5 33 3.4 4.7-5.8 5.3-10.5 4.5-37l-.6-23.3-3.9-.6c-9-1.5-18.2-8.5-22.9-17.6-2-3.8-2.4-6-2.4-13.5 0-7.8.4-9.7 2.7-14.1 4.4-8.3 12.3-14.4 21.8-16.9l4.5-1.1.3-20.7c.4-29.1-2-37.7-13.5-49.8-9.3-9.8-21.4-14.9-35.4-14.9h-7.6l-2.8 4c-14.9 21.6-44.8 29-68.5 17-6.3-3.2-17.9-13.3-20.7-18.1-1.6-2.7-2.2-2.9-7.8-2.9-3.9.1-7.2.7-9.5 2z"/><path d="M287.3 104c6.6 7.4 12.2 18 14.4 27.7l1.7 7.3H318v18c0 16.8.1 18 1.9 18 1 0 12.3-2.5 25.2-5.6 26-6.2 21.1-3.9 47.4-21.9 11.5-7.9 12.6-8.4 9.4-4.9-1.4 1.6-8.1 9.3-14.8 17.1-6.8 7.9-12.4 14.3-12.5 14.3-1.3 0-88.8 21.3-90.8 22.1-4.1 1.7-9.5 8.2-10.8 13.1-1.3 4.7-.7 10.5 1.5 14.8 3.1 5.9 11.4 11 18.1 11 1.9 0 17.4-3.6 79.4-18.5 10.7-2.6 20.9-5.3 22.5-6 4-1.7 8.9-7 35.5-37.9 13.7-16 23.2-27.9 24.6-31 6.8-14.5-.6-34.1-15.4-40.9-4.7-2.2-5-2.2-81.1-2.5l-76.3-.2 5.5 6z"/><path d="M419.3 202.2c-9.9 11.9-14.2 15.9-19.6 18.3-2.9 1.3-21.6 6.2-41.7 11-20.1 4.7-37.3 8.8-38.3 9.1-1.6.5-1.7 6.9-1.5 127.2l.3 126.7 2.2 4c4.7 8.8 11.7 12.9 21.8 12.9 10.1 0 17.1-4.1 21.8-12.9l2.2-4 .3-100.8.2-100.7h9.9l.3 100.2.3 100.3 3 5.4c3.3 6.1 7.2 9.4 13.4 11.6 9 3.1 18.3 1 25-5.7 7.7-7.9 7.2 5 6.9-161.1l-.3-148.8-6.2 7.3z"/></svg>
-              <span class="logo__text" lang="en">PhysioPortal</span>
-            </a>
-          </div>
-          <ul class="header__top-list foooter__logo__section-list">
-            <li class="footer__logo__section-item">
-              <a class="header__top-link footer__top-logo__link" href="tel:380980099921"><i class="fa fa-fw fa-phone"></i>098 009 99 21</a>
-            </li>
-            <li class="footer__logo__section-item">
-              <a class="header__top-link footer__top-logo__link" href="mailto:antondrsh@gmail.com"><i class="fa fa-fw fa-envelope"></i> antondrsh@gmail.com</a>
-            </li>
-            <li class="footer__logo__section-item">
-              <a class="header__top-link footer__top-logo__link" href="#"><i class="fa fa-fw fa-map-marker"></i> г. Киев. Багговутовская 1, корп 5</a>
-            </li>
-            <li class="footer__logo__section-item">
-              <a class="header__top-link footer__top-logo__link" href="#"><i class="fa fa-fw fa-question-circle"></i> Задать вопрос</a>
-            </li>
-            <li class="footer__logo__section-item">
-              <a class="header__top-link footer__top-logo__link" href="#"><i class="fa fa-fw fa-comments"></i> Online консультация</a>
-            </li>
-            <li class="footer__logo__section-item">
-              <a class="header__top-link footer__top-logo__link" href="#"><i class="fa fa-fw fa-book"></i> Для специалистов</a>
-            </li>
-            <li class="footer__logo__section-item">
-              <a class="header__top-link footer__top-logo__link" href="#"><i class="fa fa-fw fa-user"></i> Вход </a><span class="header__top-divider">|</span><a class="header__top-link footer__top-logo__link" href="#"> Регистрация</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__menu footer__menu-section">
-          <h3 class="footer__menu-title">Меню</h3>
-          <nav class="header__container-nav footer__container-nav">
-            <ul class="header__bottom-list footer__bottom-list">
-              <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">Головна</a></li>
-              <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">Про мене</a></li>
-              <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">Контакти</a></li>
-              <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">Відгуки</a></li>
-              <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">Сертифікати</a></li>
-              <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">Блог</a></li>
-              <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">Форум</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer__menu footer__rehab-section">
-          <h3 class="footer__menu-title">Физическая реабилитация</h3>
-          <nav class="header__container-nav footer__container-nav">
-            <ul class="header__bottom-list footer__bottom-list">
-              <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация позвоночника</a></li>
-              <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация бедра</a></li>
-              <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация колена</a></li>
-              <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация плеча</a></li>
-              <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация голеностопа</a></li>
-              <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация кистей и пальцев рук</a></li>
-              <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация локтя</a></li>
-              <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">Вызов реабилитолога на дом</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer__menu footer__articles-section">
-          <h3 class="footer__menu-title">Реабилитация после</h3>
-          <nav class="header__container-nav footer__container-nav">
-            <ul class="header__bottom-list footer__bottom-list">
-              <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация после артроскопии</a></li>
-              <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация после замены межпозвоночного диска
-              </a></li>
-              <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация после разрыва связок
-              </a></li>
-              <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация лиц пожилого возраста
-              </a></li>
-              <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация после травм суставов
-              </a></li>
-              <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация с нарушениями опорно двигательного аппарата
-              </a></li>
-              <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация после эндопротезирования
-              </a></li>
-              <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация после переломов костей</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </footer>
-    <footer class="footer__bottom">
-      <p class="footer__bottom-text">Информация предоставляется исключительно в справочных целях. Не занимайтесь самолечением и при необходимости обратитесь к соответсвующему специалисту!
-      </p>
-      <p class="footer__bottom-copyright">&#169; Copyright 2022 PhysioPortal</p>
-    </footer>
   </div>
+  <footer class="footer__top">
+    <div class="container footer__container">
+      <div class="footer__logo-section">
+        <div class="logo__inner">
+          <a class="logo" href="#" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" version="1.0" viewBox="0 0 512 512" fill="#ffffff"><path d="M361.7 1C343.4 5.7 330 22.9 330 41.8c0 14.7 6.4 26.7 18.6 35.2 11.3 7.9 27.9 9.2 40.5 3.3 32.9-15.4 33-61.2.2-76.5-5.3-2.5-8-3.1-15.1-3.4-4.8-.2-10.4.1-12.5.6zM176.7 29.1c-6.4 1.5-13.9 5.9-19.2 11.3-16 16.4-16.2 41.4-.5 58 20.3 21.5 54.6 16.3 67.7-10.2 3.7-7.4 3.8-7.9 3.8-18.1-.1-8.7-.5-11.7-2.4-16.4-2.6-6.6-11-16.3-17.4-20-8.8-5.2-21.8-7-32-4.6z"/><path d="M125 99c-1.9 1-17.7 13.7-35 28.2-33.9 28.5-35 29.7-35 38.8 0 4.5 16.6 75 19.1 81.3.7 1.5 2.9 4.3 5 6.1l3.9 3.3v123.6c0 93.7.3 124.2 1.2 126.2.7 1.5 2.4 3.3 3.9 4.1 4.5 2.3 7.8 1.7 11.5-2l3.4-3.4V255.8l2.5-2c2.9-2.2 5.9-7.7 7-12.5.5-2.4-1.4-11.6-7-34.8-4.2-17.3-7.5-32-7.3-32.5.2-.5 8.2-7.5 17.8-15.5l17.5-14.6.5 125.3.5 125.4 2.6 4.9c9.1 17.7 33.7 17.7 43.2 0 2.2-3.9 2.2-4.9 2.5-56.3l.3-52.2h9.9v96.7c0 53.3.3 99.2.7 102.1 1.8 15.3 16.4 25.2 31 21.1 6.1-1.7 14.6-9.8 16.2-15.5.8-2.7 1.1-56.9 1.1-181.2V136.9l2.3.6c5.4 1.6 5.3 1.2 6 44.2.4 21.9.7 57 .7 77.9v38.2l2.8 5.3c6.6 12.7 23.8 14.5 33 3.4 4.7-5.8 5.3-10.5 4.5-37l-.6-23.3-3.9-.6c-9-1.5-18.2-8.5-22.9-17.6-2-3.8-2.4-6-2.4-13.5 0-7.8.4-9.7 2.7-14.1 4.4-8.3 12.3-14.4 21.8-16.9l4.5-1.1.3-20.7c.4-29.1-2-37.7-13.5-49.8-9.3-9.8-21.4-14.9-35.4-14.9h-7.6l-2.8 4c-14.9 21.6-44.8 29-68.5 17-6.3-3.2-17.9-13.3-20.7-18.1-1.6-2.7-2.2-2.9-7.8-2.9-3.9.1-7.2.7-9.5 2z"/><path d="M287.3 104c6.6 7.4 12.2 18 14.4 27.7l1.7 7.3H318v18c0 16.8.1 18 1.9 18 1 0 12.3-2.5 25.2-5.6 26-6.2 21.1-3.9 47.4-21.9 11.5-7.9 12.6-8.4 9.4-4.9-1.4 1.6-8.1 9.3-14.8 17.1-6.8 7.9-12.4 14.3-12.5 14.3-1.3 0-88.8 21.3-90.8 22.1-4.1 1.7-9.5 8.2-10.8 13.1-1.3 4.7-.7 10.5 1.5 14.8 3.1 5.9 11.4 11 18.1 11 1.9 0 17.4-3.6 79.4-18.5 10.7-2.6 20.9-5.3 22.5-6 4-1.7 8.9-7 35.5-37.9 13.7-16 23.2-27.9 24.6-31 6.8-14.5-.6-34.1-15.4-40.9-4.7-2.2-5-2.2-81.1-2.5l-76.3-.2 5.5 6z"/><path d="M419.3 202.2c-9.9 11.9-14.2 15.9-19.6 18.3-2.9 1.3-21.6 6.2-41.7 11-20.1 4.7-37.3 8.8-38.3 9.1-1.6.5-1.7 6.9-1.5 127.2l.3 126.7 2.2 4c4.7 8.8 11.7 12.9 21.8 12.9 10.1 0 17.1-4.1 21.8-12.9l2.2-4 .3-100.8.2-100.7h9.9l.3 100.2.3 100.3 3 5.4c3.3 6.1 7.2 9.4 13.4 11.6 9 3.1 18.3 1 25-5.7 7.7-7.9 7.2 5 6.9-161.1l-.3-148.8-6.2 7.3z"/></svg>
+            <span class="logo__text" lang="en">PhysioPortal</span>
+          </a>
+        </div>
+        <ul class="header__top-list foooter__logo__section-list">
+          <li class="footer__logo__section-item">
+            <a class="header__top-link footer__top-logo__link" href="tel:380980099921"><i class="fa fa-fw fa-phone"></i>098 009 99 21</a>
+          </li>
+          <li class="footer__logo__section-item">
+            <a class="header__top-link footer__top-logo__link" href="mailto:antondrsh@gmail.com"><i class="fa fa-fw fa-envelope"></i> antondrsh@gmail.com</a>
+          </li>
+          <li class="footer__logo__section-item">
+            <a class="header__top-link footer__top-logo__link" href="#"><i class="fa fa-fw fa-map-marker"></i> г. Киев. Багговутовская 1, корп 5</a>
+          </li>
+          <li class="footer__logo__section-item">
+            <a class="header__top-link footer__top-logo__link" href="#"><i class="fa fa-fw fa-question-circle"></i> Задать вопрос</a>
+          </li>
+          <li class="footer__logo__section-item">
+            <a class="header__top-link footer__top-logo__link" href="#"><i class="fa fa-fw fa-comments"></i> Online консультация</a>
+          </li>
+          <li class="footer__logo__section-item">
+            <a class="header__top-link footer__top-logo__link" href="#"><i class="fa fa-fw fa-book"></i> Для специалистов</a>
+          </li>
+          <li class="footer__logo__section-item">
+            <a class="header__top-link footer__top-logo__link" href="#"><i class="fa fa-fw fa-user"></i> Вход </a><span class="header__top-divider">|</span><a class="header__top-link footer__top-logo__link" href="#"> Регистрация</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu footer__menu-section">
+        <h3 class="footer__menu-title">Меню</h3>
+        <nav class="header__container-nav footer__container-nav">
+          <ul class="header__bottom-list footer__bottom-list">
+            <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">Головна</a></li>
+            <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">Про мене</a></li>
+            <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">Контакти</a></li>
+            <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">Відгуки</a></li>
+            <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">Сертифікати</a></li>
+            <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">Блог</a></li>
+            <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">Форум</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__menu footer__rehab-section">
+        <h3 class="footer__menu-title">Физическая реабилитация</h3>
+        <nav class="header__container-nav footer__container-nav">
+          <ul class="header__bottom-list footer__bottom-list">
+            <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация позвоночника</a></li>
+            <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация бедра</a></li>
+            <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация колена</a></li>
+            <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация плеча</a></li>
+            <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация голеностопа</a></li>
+            <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация кистей и пальцев рук</a></li>
+            <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация локтя</a></li>
+            <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">Вызов реабилитолога на дом</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__menu footer__articles-section">
+        <h3 class="footer__menu-title">Реабилитация после</h3>
+        <nav class="header__container-nav footer__container-nav">
+          <ul class="header__bottom-list footer__bottom-list">
+            <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация после артроскопии</a></li>
+            <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация после замены межпозвоночного диска
+            </a></li>
+            <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация после разрыва связок
+            </a></li>
+            <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация лиц пожилого возраста
+            </a></li>
+            <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация после травм суставов
+            </a></li>
+            <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация с нарушениями опорно двигательного аппарата
+            </a></li>
+            <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация после эндопротезирования
+            </a></li>
+            <li class="footer__bottom-item"><a class="header__bottom-link footer__bottom-link" href="#">реабилитация после переломов костей</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <footer class="footer__bottom">
+    <p class="footer__bottom-text">Информация предоставляется исключительно в справочных целях. Не занимайтесь самолечением и при необходимости обратитесь к соответсвующему специалисту!
+    </p>
+    <p class="footer__bottom-copyright">&#169; Copyright 2022 PhysioPortal</p>
+  </footer>
   <script src="./js/hero-slider.js"></script>
   <script src="./js/aside.js"></script>
 </body>
