@@ -24,6 +24,16 @@ body {
   background-color: white;
 }
 
+.progress-bar {
+  position: fixed;
+  height: 6px;
+  width: 0%;
+  background: var(--accent-second-color);
+  bottom: -3px;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
