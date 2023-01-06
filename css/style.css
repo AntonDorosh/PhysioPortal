@@ -3,7 +3,6 @@
   --accent-second-color: #3db23d;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -481,6 +480,34 @@ span.slider-dots__active {
   padding: 15px;
 }
 
+.forum__topics {
+  display: grid;
+  grid-template-columns: minmax(200px, 60%) minmax(150px, 20%) minmax(150px, 20%);
+}
+
+.forum__topics-name,
+.forum__topics-count,
+.forum__topics-date {
+  margin-bottom: 5px;
+  padding: 5px;
+  font-size: 1.1rem;
+}
+
+.forum__topics-count {
+  margin-left: 15px;
+}
+
+.forum__topics-link:hover {
+  text-decoration: underline;
+}
+
+.forum__topics-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  background-color: rgb(240, 240, 240);
+  padding: 5px;
+}
+
 .blog__title-inner,
 .reviews__title-inner,
 .forum__title-inner {
@@ -520,15 +547,47 @@ span.slider-dots__active {
 
 .blog__list {
   display: flex;
+  justify-content: space-between;
 }
 
+.blog__list-img {
+  border-radius: 10px;
+}
+
+.blog__list-title {
+  min-height: 90px;
+  font-size: 1.2rem;
+  letter-spacing: 0.03rem;
+}
+
+.blog__list-title,
+.blog__list-preview {
+  margin-top: 5px;
+}
+.blog__list-preview {
+  margin-bottom: 20px;
+  background-color: var(--accent-color);
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+}
+
+.blog__list-bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog__list-item {
+  width: 220px;
+
+}
 
 /* FOOTER */
 
 .footer__top {
   background-color: var(--accent-color);
   padding: 20px 0 0 0;
-  clear: both;
+
 }
 
 .footer__menu {
@@ -557,12 +616,32 @@ span.slider-dots__active {
   margin-bottom: 5px;
 }
 
-.footer__bottom-list {
+.footer__top-list {
   flex-direction: column;
 }
 
-.footer__bottom-link {
+.footer__top-link {
   font-size: 1rem;
+}
+
+.footer__bottom-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__bottom-item {
+  margin-left: 5px;
+}
+
+.footer__bottom-link {
+  color:#0000ff;
+  letter-spacing: 0.02em;
+}
+
+.footer__bottom-link:hover,
+.footer__bottom-link:focus,
+.footer__bottom-link:active {
+  text-decoration: underline;
 }
 
 .footer__menu-title {
