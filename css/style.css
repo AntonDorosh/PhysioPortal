@@ -401,7 +401,8 @@ span.slider-dots__active {
 }
 
 .question,
-.registration {
+.registration,
+.donate {
   background-color: rgb(240, 240, 240);
   padding: 25px;
   height: 20vh;
@@ -476,8 +477,9 @@ span.slider-dots__active {
 
 .reviews__list,
 .blog__list,
-.forum__topics {
-  padding: 15px;
+.forum__topics,
+.request {
+  padding: 30px 20px 30px 20px;
 }
 
 .forum__topics {
@@ -579,7 +581,122 @@ span.slider-dots__active {
 
 .blog__list-item {
   width: 220px;
+}
 
+.request {
+  display: flex;
+}
+
+
+.request__step-list {
+  flex: 1;
+  margin-left: 20px;
+  font-size: 1.3rem;
+}
+
+.request__form-inner {
+  flex: 1;
+  width: 90%;
+}
+
+.request__form-name,
+.request__form-email,
+.request__form-phone,
+.request__form-text,
+.request__form-btn,
+.request__form-text,
+.request__form-file {
+  display: block;
+  margin-top: 10px;
+}
+
+.request__form-name,
+.request__form-email,
+.request__form-phone,
+.request__form-text {
+  padding: 8px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: 1px solid var(--accent-color);
+}
+
+.request__form-name:hover,
+.request__form-name:active,
+.request__form-name:focus,
+.request__form-email:hover,
+.request__form-email:focus,
+.request__form-email:active,
+.request__form-phone:active,
+.request__form-phone:focus,
+.request__form-phone:hover,
+.request__form-text:hover,
+.request__form-text:active,
+.request__form-text:focus {
+  outline: none;
+  box-shadow: 0 0 10px 4px rgba(71, 71, 71, 0.3);
+}
+
+.request__form {
+  width: 90%;
+}
+
+.request__form-btn {
+  color:white;
+  background-color: #5e5ee5;
+  font-size: 1.3rem;
+  padding: 8px 15px 8px 15px;
+  width: 40%;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin: 15px auto;
+}
+
+.request__form-btn:hover,
+.request__form-btn:focus,
+.request__form-btn:active {
+  text-decoration: underline;
+  outline: none;
+}
+
+.request__form-file {
+  font-size: 1.05rem;
+}
+
+.request__form-checkbox {
+  margin-top: 15px;
+}
+
+.request__form-text {
+  width: 100%;
+}
+
+textarea.request__form-text {
+  font-size: 1.2rem;
+  padding: 8px;
+}
+
+.request__form-text::placeholder {
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.request__form-link {
+  color: #0000ff;
+}
+
+.request__form-link:hover,
+.request__form-link:focus,
+.request__form-link:active {
+  text-decoration: underline;
+  outline: none;
+}
+
+.request__form-tip {
+  font-size: .9rem;
+  margin-top: 2px;
 }
 
 /* FOOTER */
