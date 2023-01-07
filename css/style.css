@@ -23,15 +23,56 @@ body {
   background-color: white;
 }
 
-.progress-bar {
-  position: fixed;
-  height: 6px;
-  width: 0%;
-  background: var(--accent-second-color);
-  bottom: -3px;
-  transform: translateY(-50%);
-  z-index: 100;
+/* прогресс бар в хедере */
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background-color: #ccc;
+  opacity: 0.9;
 }
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 5px;
+  background-color: var(--accent-color);
+  width: 0%;
+}
+
+
+/* кнопка прокрутки вверх */
+
+.btn-up {
+  position: fixed;
+  background-color: var(--accent-color);
+  right: 20px;
+  bottom: 20px;
+  border-radius: 22px;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+.btn-up::before {
+  content: "";
+  text-align: center;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 12px;
+  top: 12px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 17V4M3 10l7-7 7 7'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+  .btn-up_hide {
+    display: none;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+      background-color: var(--accent-color);
+    }
+  }
+
 
 
 .container {
@@ -71,6 +112,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 5;
+  padding-top: 5px;
 }
 
 .header__bottom-container {
@@ -329,7 +371,22 @@ span.slider-dots__active {
 
 .sidebar__nav {
   position: sticky;
-  top: 60px;
+  top: 75px;
+  overflow-y: auto;
+  max-height: 600px;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ccc;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 5px;
 }
 
 /* CONTENT  */
@@ -568,9 +625,7 @@ span.slider-dots__active {
 }
 .blog__list-preview {
   margin-bottom: 20px;
-  background-color: var(--accent-color);
   border-radius: 5px;
-  color: white;
   padding: 5px;
 }
 
@@ -585,18 +640,33 @@ span.slider-dots__active {
 
 .request {
   display: flex;
+  gap: 20px;
 }
 
+.request__list-inner {
+  flex: 1;
+
+}
+
+.request__title {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.request__step-item {
+  margin-top: 5px;
+}
 
 .request__step-list {
-  flex: 1;
   margin-left: 20px;
   font-size: 1.3rem;
+  margin-top: 20px;
 }
 
 .request__form-inner {
   flex: 1;
   width: 90%;
+  margin-top: 20px;
 }
 
 .request__form-name,
